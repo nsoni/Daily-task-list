@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+
+	<!-- main body -->
+		<div class="ful">
+			<div class="center_block container">
+
+				<!-- head -->
+				<div class="ful center_text container_head"> Weekly List</div>
+
+				<!-- Columns -->
+				<div class="ful max">
+					<div class="fourth column pillers left all_col" id="all">
+						<div class="ful center_text list_head">Tasks</div>
+						<div class="tasks ful"></div>
+						<!-- 	Tamplate -->
+						<div class="left dragable temp hide task-unit ">
+							<div class="ful info">
+								<input id="TaskHeading" type="text" class="readonly" readonly placeholder="Title">
+								<textarea id="task-discription" readonly class="readonly" placeholder="Description"></textarea>
+							</div>
+							<div class="ful action_bar">
+								<span class="time"></span>
+								<a class="right edit" href="#" title="edit"></a>
+								<a class="right remove" href="#" title="delete"></a>
+							</div>
+							<div class="progress"></div>
+						</div>
+
+						<div class="left temp_box">
+							<div class="ful center_text temp_head">Temp Box</div>
+						</div>
+
+						<!-- add new task -->
+						<div class="left create_task_box">
+							<div class="ful info">
+								<p>Add New Task:</p>
+								<div class="ful relative info_val">
+									<input id="title" type="text" name="title" required>
+									<label class="input_label titl" for="title">Title </label>
+								</div>
+								<div class="ful relative info_val">
+									<textarea name="discription" id="discription" required></textarea>
+									<label class="input_label disc" for="discription">Description</label>
+								</div>
+								
+							</div>
+							<div class="ful action_bar">
+								<div class="right add_task_button">Add Task</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="fourth column pillers left to_do_col" id="todo">
+						<div class="ful center_text list_head">New Tasks</div>
+						<div class="tasks ful"></div>
+					</div>
+
+					<div class="fourth column pillers left  progress_col" id="progress">
+						<div class="ful center_text list_head">In Progress</div>
+						<div class="tasks ful"></div>
+					</div>
+
+					<div class="fourth column pillers left complet_col" id="complete">
+						<div class="ful center_text list_head">Completed Tasks</div>
+						<div class="tasks ful"></div>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+
+	</body>
+
+	<script src="libs/jq.js"></script>
+	<script src="js/script.js"></script>
+</html>
